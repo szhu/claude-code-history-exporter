@@ -1,0 +1,10 @@
+#!/usr/bin/env -S deno run --allow-read --allow-write --allow-env
+
+import { main } from "../src/app/cli.ts";
+
+try {
+  await main(Deno.args);
+} catch (error) {
+  console.error('Error:', error instanceof Error ? error.message : String(error));
+  Deno.exit(1);
+}

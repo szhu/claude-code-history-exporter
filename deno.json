@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "fmt": {
+    "proseWrap": "never"
+  },
+  "tasks": {
+    "test": "deno test --allow-read --allow-write --allow-run src/app/cli.test.ts",
+    "check": "deno check src/app/*.ts"
+  }
+}
